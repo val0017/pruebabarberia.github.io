@@ -1,0 +1,191 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+
+:root {
+    --color-general: #383838;
+    --color-titulos: #222222;
+    --fondo-negro: #262728;
+    --fondo-rosado: #fee9da;
+    --color-gris-testimonial: #c6c6c6;
+    
+ 
+    --font-contenido: 'Didact Gothic', sans-serif;
+    --font-titulos: 'Poppins', sans-serif;
+}
+
+body {
+    font-family: var(--font-contenido);
+    color: var(--color-general);
+    background-color: #1a1a1a;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-titulos);
+}
+
+
+.navbar-nav .nav-link {
+    color: #ffffff !important;
+    font-family: var(--font-titulos);
+    font-size: 0.9rem;
+}
+
+.navbar-nav .nav-link:hover {
+    opacity: 0.7;
+}
+
+#trendy {
+    background-color: #ffffff;
+}
+
+#trendy h2 {
+    font-family: var(--font-titulos, 'Poppins', sans-serif);
+}
+
+#trendy p {
+    color: #666666 !important;
+}
+
+#trendy a {
+    transition: opacity 0.3s ease;
+}
+
+#trendy a:hover {
+    opacity: 0.7;
+}
+
+#services {
+    background-color: #ffffff;
+}
+
+#services h2 {
+    font-family: var(--font-titulos, 'Poppins', sans-serif);
+}
+
+#services p {
+    color: #666666 !important;
+}
+
+.service-card {
+    height: 250px;
+    cursor: pointer;
+}
+
+.service-card img {
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.service-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.55);
+    transition: background-color 0.3s ease;
+}
+
+.service-card:hover img {
+    transform: scale(1.08);
+}
+
+.service-card:hover .service-overlay {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.service-card h4 {
+    font-family: var(--font-titulos, 'Poppins', sans-serif);
+    letter-spacing: 0.5px;
+}
+
+#products {
+    background-color: #fee9da !important;
+}
+
+#products h2 {
+    font-family: var(--font-titulos, 'Poppins', sans-serif);
+}
+
+#products p {
+    color: #666666 !important;
+}
+
+#products a {
+    transition: opacity 0.3s ease;
+}
+
+#products a:hover {
+    opacity: 0.7;
+}
+#testimonials {
+    background-color: #ffffff !important;
+}
+
+#testimonials h5 {
+    font-family: var(--font-titulos, 'Poppins', sans-serif);
+}
+
+#testimonials p {
+    font-family: var(--font-contenido, 'Didact Gothic', sans-serif);
+}
+
+#testimonial-2 {
+    background-color: #ffffff !important;
+}
+
+
+#testimonial-2 h5 {
+    font-family: var(--font-titulos, 'Poppins', sans-serif);
+}
+
+#testimonial-2 p {
+    font-family: var(--font-contenido, 'Didact Gothic', sans-serif);
+}
+
+#contact {
+    background-color: #ffffff !important;
+}
+
+#contact h2 {
+    font-family: var(--font-titulos, 'Poppins', sans-serif);
+}
+
+.custom-input {
+    border: none;
+    border-bottom: 1px solid #ced4da;
+    border-radius: 0;
+    padding-left: 0;
+    padding-right: 0;
+    background-color: transparent;
+    box-shadow: none !important;
+    font-family: var(--font-contenido, 'Didact Gothic', sans-serif);
+}
+
+.custom-input:focus {
+    border-color: #222222;
+}
+
+.custom-input::placeholder {
+    color: #999999;
+    font-size: 0.9rem;
+}
+
+#main-footer {
+    background-color: #000000 !important;
+}
+
+.footer-social-link {
+    color: #ffffff;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: opacity 0.3s ease;
+}
+
+.footer-social-link:hover {
+    color: #ffffff;
+    opacity: 0.6;
+}
